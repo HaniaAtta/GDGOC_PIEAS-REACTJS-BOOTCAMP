@@ -39,22 +39,25 @@
 import React from 'react';
 import HighRatedBooks from './HighRatedBooks';
 import BookDetails from './BookDetails';
- import FictionBooks from './FictionBooks';
+import FictionBooks from './FictionBooks';
 import BookAuthors from './BookAuthors';
 import BorrowedBooks from './BorrowedBooks';
 import FavBooks from './FavBooks';
+import BooksProvider from './BooksContext'; 
 
 const App = () => {
     return (
-        <div className="app">
-            <h1>My Library Manager</h1>
-            <HighRatedBooks />
-            <BookDetails />
-            <FictionBooks />
-            <BookAuthors />
-            <BorrowedBooks /> {/* Include BorrowedBooks component */}
-            <FavBooks /> {/* Include FavBooks component */}
-        </div>
+        <BooksProvider> {/* Wrap your components with the provider */}
+            <div className="app">
+                <h1>My Library Manager</h1>
+                <HighRatedBooks />
+                <BookDetails />
+                <FictionBooks />
+                <BookAuthors />
+                <BorrowedBooks />
+                <FavBooks />
+            </div>
+        </BooksProvider>
     );
 };
 

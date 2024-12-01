@@ -1,24 +1,11 @@
-import React, { useContext } from 'react';
-import { BooksContext } from './BooksContext';
+// src/Button.jsx
+import React from 'react';
 
-const Button = ({ title }) => {
-    const { addToBorrowed, addToFavorites } = useContext(BooksContext);
-
-    const handleAddToBorrowed = () => {
-        console.log(`Adding ${title} to borrowed list`);
-        addToBorrowed(title);
-    };
-
-    const handleAddToFavorites = () => {
-        console.log(`Adding ${title} to favorites`);
-        addToFavorites(title);
-    };
-
+const Button = ({ title, onClick }) => {
     return (
-        <div>
-            <button onClick={handleAddToBorrowed}>Add Me</button>
-            <button onClick={handleAddToFavorites}>Favorite</button>
-        </div>
+        <button onClick={onClick}>
+            {title}
+        </button>
     );
 };
 
