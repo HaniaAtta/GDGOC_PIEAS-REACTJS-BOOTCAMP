@@ -1,3 +1,4 @@
+// src/BookCard.jsx
 import React from 'react';
 
 const BookCard = ({ title, author, rating, genre }) => {
@@ -7,6 +8,7 @@ const BookCard = ({ title, author, rating, genre }) => {
             <p>Author: {author}</p>
             <p>Rating: {rating}</p>
             <p>Genre: {genre}</p>
+            <Button title={title} /> {/* Include the Button component */}
         </div>
     );
 };

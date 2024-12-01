@@ -35,11 +35,14 @@
 // export default App
 
 
+// src/App.jsx
 import React from 'react';
-import HighRatedBooks from './HighRatedBooks.jsx';
-import BookDetails from './BookDetails.jsx';
-import FictionBooks from './FictionBooks.jsx';
-import BookAuthors from './BookAuthors.jsx';
+import HighRatedBooks from './HighRatedBooks';
+import BookDetails from './BookDetails';
+ import FictionBooks from './FictionBooks';
+import BookAuthors from './BookAuthors';
+import BorrowedBooks from './BorrowedBooks';
+import FavBooks from './FavBooks';
 
 const App = () => {
     return (
@@ -49,6 +52,8 @@ const App = () => {
             <BookDetails />
             <FictionBooks />
             <BookAuthors />
+            <BorrowedBooks /> {/* Include BorrowedBooks component */}
+            <FavBooks /> {/* Include FavBooks component */}
         </div>
     );
 };
