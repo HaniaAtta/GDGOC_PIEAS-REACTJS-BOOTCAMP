@@ -1,4 +1,3 @@
-// src/FavBooks.jsx
 import React, { useContext } from 'react';
 import { BooksContext } from './BooksContext';
 
@@ -9,9 +8,13 @@ const FavBooks = () => {
         <div>
             <h2>Favorite Books</h2>
             <ul>
-                {favBooks.map((title, index) => (
-                    <li key={index}>{title}</li>
-                ))}
+                {favBooks.length > 0 ? (
+                    favBooks.map((title, index) => (
+                        <li key={index}>{title}</li>
+                    ))
+                ) : (
+                    <li>No favorite books</li>
+                )}
             </ul>
         </div>
     );

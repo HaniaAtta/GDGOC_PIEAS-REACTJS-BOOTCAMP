@@ -1,4 +1,3 @@
-// src/BooksContext.jsx
 import React, { createContext, useState } from 'react';
 
 export const BooksContext = createContext();
@@ -22,4 +21,4 @@ const BooksProvider = ({ children }) => {
     );
 };
 
-export default BooksProvider; 
+export default BooksProvider;

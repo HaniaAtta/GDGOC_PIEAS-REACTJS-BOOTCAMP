@@ -8,9 +8,13 @@ const BorrowedBooks = () => {
         <div>
             <h2>Borrowed Books</h2>
             <ul>
-                {borrowedBooks.map((title, index) => (
-                    <li key={index}>{title}</li>
-                ))}
+                {borrowedBooks.length > 0 ? (
+                    borrowedBooks.map((title, index) => (
+                        <li key={index}>{title}</li>
+                    ))
+                ) : (
+                    <li>No borrowed books</li>
+                )}
             </ul>
         </div>
     );
