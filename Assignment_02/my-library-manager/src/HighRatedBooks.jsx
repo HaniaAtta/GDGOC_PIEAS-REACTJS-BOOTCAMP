@@ -1,7 +1,6 @@
-// src/HighRatedBooks.jsx
 import React from 'react';
-import  Books  from './books';
-import BookCard from './BookCard';
+import Books from './books.js'; 
+import BookCard from './BookCard.jsx';
 
 const HighRatedBooks = () => {
     const highRated = Books.filter(book => book.rating > 4.5);

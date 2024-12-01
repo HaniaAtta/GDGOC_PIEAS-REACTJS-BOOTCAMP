@@ -34,12 +34,12 @@
 
 // export default App
 
-// src/App.jsx
+
 import React from 'react';
-import HighRatedBooks from './HighRatedBooks';
-import BookDetails from './BookDetails';
-import FictionBooks from './FictionBooks';
-import BookAuthors from './BookAuthors';
+import HighRatedBooks from './HighRatedBooks.jsx';
+import BookDetails from './BookDetails.jsx';
+import FictionBooks from './FictionBooks.jsx';
+import BookAuthors from './BookAuthors.jsx';
 
 const App = () => {
     return (

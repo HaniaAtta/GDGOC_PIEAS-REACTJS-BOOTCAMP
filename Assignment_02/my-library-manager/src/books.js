@@ -1,3 +1,4 @@
+
 const Books = [
     { id: 1, title: "The Catcher in the Rye", author: "J.D. Salinger", rating: 4.5, genre: "Fiction" },
     { id: 2, title: "To Kill a Mockingbird", author: "Harper Lee", rating: 4.8, genre: "Fiction" },
